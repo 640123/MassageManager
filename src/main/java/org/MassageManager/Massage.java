@@ -14,7 +14,7 @@ public class Massage implements Consumer <GroupMessageEvent> {
         event.getMessage();
         if (event.getMessage() == MessageChain.deserializeFromJsonString(".hello")){
             event.getGroup().sendMessage(MessageUtils.newChain(new At(event.getSender().getId()))
-                    .plus("欢迎使用MassageManager插件！\n基于Mirai-console2.7.0开发\n开发者：Bert（亦可称Wutzu）\n当前插件版本：快照1.0\n当前开发进度：\nhello模块：已完成\n撤回模块：开发中\n禁言模块：开发中\n本插件属于开源项目\n开源库地址："));
+                    .plus("欢迎使用MassageManager插件！\n基于Mirai-console2.7.0开发\n开发者：Bert（亦可称Wutzu）\n当前插件版本：快照1.0\n当前开发进度：\nhello模块：已完成\n撤回模块：开发中\n禁言模块：开发中\n本插件属于开源项目\n开源库地址：https://github.com/640123/MassageManager\n声明：部分代码学习自其他github的开源项目。"));
         }
     }
 }
